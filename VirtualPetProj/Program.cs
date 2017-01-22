@@ -10,63 +10,36 @@ namespace VirtualPetProj
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Do you like Panda? \nType yes or no");
+            Console.WriteLine("Hello! 275 years ago, I helped your Great, Great, Great, Great, Great Grandfather slay the Red Dragon. Now he's been reserected and I want to help you defeat of him. While I'm very old, I like to snuggle and play when I'm not killing ancient monsters. Just think of me as your pet!");
+
+            Console.WriteLine("\nDo you like Pandas? \nType yes or no");
+
             string panda = Console.ReadLine();
             if (panda.ToLower() == "yes")
             {
-                Console.WriteLine("You belong in an awesome group!");
 
-                Console.WriteLine("Please enter your first name?");
+                Console.WriteLine("Great! You're just like your ancient relatives who recognized the wisdom, sharp intellect, and cuddly nature of pandas");
+            }
+            else
+            {
+                Console.WriteLine("That's too bad, I was thinking about giving you a million dollars after we slay the red dragon. Instead I guess we'll just go our separate ways once we chopped off his head and hang it like an ornament above the fire place!");
+            }
+            { 
+            Console.WriteLine("\nPlease enter your first name?");
                 string firstName = Console.ReadLine();
                 if (firstName == firstName)
                 {
-                    Console.WriteLine("\n" + firstName + ", meet your new pet: ");
-                    VirtualPet pet1 = new VirtualPet(100, 50);
+                    Console.WriteLine("\n" + firstName + ", I need you help!: ");
+                    VirtualPet pet1 = new VirtualPet(50, 50);
                     pet1.DisplayOrithePanda();
                     pet1.OrithePandaIssue();
-                    OritheMoody();
+                    pet1.OritheMoody();
 
 
                 }
             }
+            
         }
-        static void OritheMoody()
-        {
-            while (true)
-            {
-                Console.WriteLine("1. Feed him");
-                Console.WriteLine("2. Give him water");
-                Console.WriteLine("3. Pet him");
-                int answer = int.Parse(Console.ReadLine());
-                if (answer == 1)
-                {
-                    Console.WriteLine("Ori the Panda's food level is 100%");
-
-                }
-
-                else if (answer == 2)
-                {
-                    Console.WriteLine("Ori the Panda's water level is 100%");
-
-                }
-                else if (answer == 3)
-                {
-                    Console.WriteLine(" Ori is happy!");
-                    break;
-
-                }
-                else
-                {
-                    Console.WriteLine("Forget it!");
-                }
-
-                //string[] mood = new string[4];
-                //mood[0] = "1.Feed him";
-                //mood[1] = "2.Give him water";
-                //mood[2] = "3.Pet him";
-                //mood[3] = "4. Give him some air";
-
-            }
-        }
+        
     }
 }
