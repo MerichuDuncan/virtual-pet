@@ -81,7 +81,7 @@ namespace VirtualPetProj
             if (Strength <= 60)
             {
 
-                Console.WriteLine("Your family has the ability to improve my powers by typing in a letter in the console.  You're what we like to call a 'Console Master'. It's a special ability only given to those who are very cool.  Be sure to make me stronger and increase my magic level.  Otherwise the Red Dragon will eat us alive and use what remains of our bones as a toothpicks! ");
+                Console.WriteLine("Your family has the ability to improve my powers by typing in a letter in the console.  You're what we like to call a 'Console Master'. It's a special ability only given to those who are very cool.  Be sure to make me stronger and increase my magic level.  Otherwise the Red Dragon will eat us alive and use what remains of our bones as toothpicks! ");
             }
 
 
@@ -107,32 +107,36 @@ namespace VirtualPetProj
         {
             while (true)
             {
-                Console.WriteLine("1. ");
-                Console.WriteLine("2. ");
-                Console.WriteLine("3. ");
+                Console.WriteLine("1. Add power ");
+                Console.WriteLine("2. Add strength ");
+                Console.WriteLine("3. Add dexterity ");
+                Console.WriteLine("4. Add magic");
+
                 int answer = int.Parse(Console.ReadLine());
                 if (answer == 1)
                 {
-                    Console.WriteLine("Ori the Panda's food level is 100%");
+                    Console.WriteLine("Ori the Panda's power level is 100%");
 
                 }
 
                 else if (answer == 2)
                 {
-                    Console.WriteLine("Ori the Panda's water level is 100%");
-
+                    Console.WriteLine("Ori the Panda's strength level is 100%");
                 }
+
                 else if (answer == 3)
                 {
-                    Console.WriteLine("Ori is happy!");
-                    break;
-
+                    Console.WriteLine("Ori the Panda's dexterity level is 100%");
+                }
+                else if (answer == 4)
+                {
+                    Console.WriteLine("Ori the Panda's magic level is 100%");
                 }
                 else
                 {
-                    Console.WriteLine("Forget it!");
+                    break;
                 }
-
+           
                 //string[] mood = new string[4];
                 //mood[0] = "1.Feed him";
                 //mood[1] = "2.Give him water";
