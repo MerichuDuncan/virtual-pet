@@ -130,9 +130,9 @@ namespace VirtualPetProj
                     Console.WriteLine("Ori the Panda's strength level: " + strengthLevel);
                     Console.WriteLine("Ori the Panda's dexterity level: " + dexterityLevel);
                     Console.WriteLine("Ori the Panda's magic level: " + magicLevel);
-                  
-                    
-                    }
+                    Console.WriteLine("I'm still not ready! I need more!\n");
+
+                }
           
 
                 else if (answer == 2 || answer==1)
@@ -142,7 +142,9 @@ namespace VirtualPetProj
                     Console.WriteLine("Ori the Panda's power level: " + (powerLevel+powerLevel));
                     Console.WriteLine("Ori the Panda's dexterity level: " + dexterityLevel);
                     Console.WriteLine("Ori the Panda's magic level: " + magicLevel);
-                  
+                    Console.WriteLine("I'm still not ready! I need more!\n");
+
+
                 }
 
                 else if (answer == 3|| answer==2 ||answer==1)
@@ -153,7 +155,8 @@ namespace VirtualPetProj
                     Console.WriteLine("Ori the Panda's power level: " + (powerLevel+powerLevel));
                     Console.WriteLine("Ori the Panda's strength level: " + (strengthLevel+strengthLevel));
                     Console.WriteLine("Ori the Panda's magic level: " + magicLevel);
-                   
+                    Console.WriteLine("I'm still not ready! I need more!\n");
+
 
                 }
 
@@ -164,7 +167,7 @@ namespace VirtualPetProj
                     Console.WriteLine("Ori the Panda's power level: " + (powerLevel+powerLevel));
                     Console.WriteLine("Ori the Panda's strength level: " + (strengthLevel+strengthLevel));
                     Console.WriteLine("Ori the Panda's dexterity level: " + (dexterityLevel+dexterityLevel));
-                   
+                    Console.WriteLine("I'm full! Whenever your ready just enter 5\n");
                     
                 }
                 else
@@ -182,34 +185,7 @@ namespace VirtualPetProj
 
             }
         }
-        public void Ori()
-        {
-
-           
-            Console.WriteLine("            ___oo#:#o__");
-            Console.WriteLine("     o##########o###-");
-            Console.WriteLine("    ####o#~:~#~#####:~o______________");
-            Console.WriteLine("    #####o~ -- ~  ~~~~ ~            ~~--_   _o---~- -o");
-            Console.WriteLine("   ~-##~_~-__                           ~-~::######oo:o");
-            Console.WriteLine("   ~-##~_~-__                           ~-~::######oo:o");
-            Console.WriteLine("     ~~##-~~ ~   _oooooo___        o_____    ~ ~~~#~##~o_");
-            Console.WriteLine("     ~~##-~~ ~   _oooooo___        o_____    ~ ~~~#~##~o_");
-            Console.WriteLine("   _~~~~     _o##############__  _########o_      #~~~####");
-            Console.WriteLine(" o~         o#####~~~~~~#####~~ #############o    ~-###_~o");
-            Console.WriteLine(" #o       _####_~  _ooo#o###:   ########~~:###:_   ~####~");
-            Console.WriteLine("o~        #o####_o_######~#o#    #######-  ~-##_##~#--~");
-            Console.WriteLine("#         ###########~~~~:::~     ~######    #######_");
-            Console.WriteLine("#          #######:~~~ ~########o_  ######o_o########");
-            Console.WriteLine("#          -~~~~~~~     ~########~ _#################");
-            Console.WriteLine(" ~_            _         ~~#~~~ ~ -#~################");
-            Console.WriteLine("  ~_        _  ~-__       o~        ~~###########~#-");
-            Console.WriteLine("   ~o_  -_  #      ~~~~---#              ~~~-~~:_~~");
-            Console.WriteLine("  _oo_~-_:~~~o             ~o_          ____--~ ~~#__    ____");
-            Console.WriteLine("#####o#_-~-~#o #_o---          :#::~#--##~--ooo_o_o###~:    ~~_");
-            Console.WriteLine("######:o-    ~#_ ~##o_      __-~~####oo_~~~~-_:~ ##o_   ~~o_o-~~");
-            Console.WriteLine("######~~~      ~o:~~###o--~~      ~~~####oo_  ~~  ~###  ##o~~-_");
-
-        }
+      
     }
 }
 
