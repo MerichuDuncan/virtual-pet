@@ -10,7 +10,32 @@ namespace VirtualPetProj
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter your first name to start?");
+
+            Console.WriteLine("                W    E    L    C    O   M   E");
+            Console.WriteLine("       ___oo#:#o__");
+            Console.WriteLine("     o##########o###-");
+            Console.WriteLine("    ####o#~:~#~#####:~o______________");
+            Console.WriteLine("    #####o~ -- ~  ~~~~ ~            ~~--_   _o---~- -o");
+            Console.WriteLine("   ~-##~_~-__                           ~-~::######oo:o");
+            Console.WriteLine("   ~-##~_~-__                           ~-~::######oo:o");
+            Console.WriteLine("     ~~##-~~ ~   _oooooo___        o_____    ~ ~~~#~##~o_");
+            Console.WriteLine("     ~~##-~~ ~   _oooooo___        o_____    ~ ~~~#~##~o_");
+            Console.WriteLine("   _~~~~     _o##############__  _########o_      #~~~####");
+            Console.WriteLine(" o~         o#####~~~~~~#####~~ #############o    ~-###_~o");
+            Console.WriteLine(" #o       _####_~  _ooo#o###:   ########~~:###:_   ~####~");
+            Console.WriteLine("o~        #o####_o_######~#o#    #######-  ~-##_##~#--~");
+            Console.WriteLine("#         ###########~~~~:::~     ~######    #######_");
+            Console.WriteLine("#          #######:~~~ ~########o_  ######o_o########");
+            Console.WriteLine("#          -~~~~~~~     ~########~ _#################");
+            Console.WriteLine(" ~_            _         ~~#~~~ ~ -#~################");
+            Console.WriteLine("  ~_        _  ~-__       o~        ~~###########~#-");
+            Console.WriteLine("   ~o_  -_  #      ~~~~---#              ~~~-~~:_~~");
+            Console.WriteLine("  _oo_~-_:~~~o             ~o_          ____--~ ~~#__    ____");
+            Console.WriteLine("#####o#_-~-~#o #_o---          :#::~#--##~--ooo_o_o###~:    ~~_");
+            Console.WriteLine("######:o-    ~#_ ~##o_      __-~~####oo_~~~~-_:~ ##o_   ~~o_o-~~");
+            Console.WriteLine("######~~~      ~o:~~###o--~~      ~~~####oo_  ~~  ~###  ##o~~-_");
+
+            Console.WriteLine("\nPlease enter your first name to start?");
             string firstName = Console.ReadLine();
             if (firstName == firstName)
 
@@ -35,6 +60,7 @@ namespace VirtualPetProj
                     VirtualPet pet1 = new VirtualPet(50, 50, 50, 50);
                     pet1.OrithePandaIssue();
                     pet1.OritheMoody();
+                    pet1.Ori();
                 }
 
 
