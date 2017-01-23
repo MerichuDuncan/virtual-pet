@@ -18,7 +18,7 @@ namespace VirtualPetProj
             string firstName = Console.ReadLine();
             if (firstName == firstName)
 
-                Console.WriteLine("\nWelcome! " + firstName + ", 275 years ago, I helped your Great, Great, Great, Great, Great Grandfather slay the Red Dragon.\nNow he's been reserected and I want to help you defeat him. While I'm very old,\nI like to snuggle and play when I'm not killing ancient monsters.\nJust think of me as your pet!");
+                Console.WriteLine("\nWelcome! " + firstName + ", My name is Ori the Panda. 275 years ago, I helped your Great, Great, Great, Great, Great Grandfather slay the Red Dragon.\nNow he's been reserected and I want to help you defeat him. While I'm very old,\nI like to snuggle and play when I'm not killing ancient monsters.\nJust think of me as your pet!");
 
             Console.WriteLine("\nDo you like Pandas? \nType yes or no");
 

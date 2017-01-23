@@ -172,7 +172,7 @@ namespace VirtualPetProj
                 }
                 else
                 {
-                    Console.WriteLine(" Now I'm ready to slay the dragon!");
+                    Console.WriteLine(" \nNow I'm ready to slay the dragon!");
                     break;
                 }
 
