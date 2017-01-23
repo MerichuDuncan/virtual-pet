@@ -53,6 +53,7 @@ namespace VirtualPetProj
         {
             get { return this.magicLevel; }
             set { this.magicLevel = value; }
+
         }
         //Constructors
         public VirtualPet(int powerLevel, int strengthLevel, int dexterityLevel, int magicLevel)
@@ -65,10 +66,10 @@ namespace VirtualPetProj
         }
         public VirtualPet(int strength, int dexterityLevel)
         {
-            this.strengthLevel = 10;
-            this.dexterityLevel = 10;
-            this.magicLevel = 10;
-            this.powerLevel = 10;
+            this.strengthLevel = 50;
+            this.dexterityLevel = 50;
+            this.magicLevel = 50;
+            this.powerLevel = 50;
 
         }
 
@@ -80,71 +81,111 @@ namespace VirtualPetProj
             int strengthLevel = Strength;
             if (Strength <= 60)
             {
+                Console.WriteLine("Your family has the ability to improve my powers by typing in a letter in the console.\nYou're what we like to call a 'Console Master'. It's a special ability only given to those who are very cool.\nBe sure to make me stronger and increase my magic level.  Otherwise the Red Dragon will eat us alive and use what remains of our bones as toothpicks! \nPress A to get to know me more or B to skip the intro");
+                string userAnswer = Console.ReadLine();
+                if (userAnswer.ToLower() == "a")
+                {
+                    Console.WriteLine("Name: " + name);
+                    Console.WriteLine("Age: " + age);
+                    Console.WriteLine("Color: " + color);
+                    Console.WriteLine("________________________________________________________");
 
-                Console.WriteLine("Your family has the ability to improve my powers by typing in a letter in the console.  You're what we like to call a 'Console Master'. It's a special ability only given to those who are very cool.  Be sure to make me stronger and increase my magic level.  Otherwise the Red Dragon will eat us alive and use what remains of our bones as toothpicks! ");
+                    Console.WriteLine("\nOri the Panda's power level: " + powerLevel);
+                    Console.WriteLine("Ori the Panda's strength level: " + strengthLevel);
+                    Console.WriteLine("Ori the Panda's dexterity level: " + dexterityLevel);
+                    Console.WriteLine("Ori the Panda's magic level: " + magicLevel);
+                    Console.WriteLine("________________________________________________________\n I need you help!");
+
+                }
+                else
+                {
+                    Console.WriteLine("You hurt me so bad, help me by entering a number to update my level status inorder for me to fight the dragon");
+                    Console.WriteLine("Ori the Panda's power level: " + powerLevel);
+                    Console.WriteLine("Ori the Panda's strength level: " + strengthLevel);
+                    Console.WriteLine("Ori the Panda's dexterity level: " + dexterityLevel);
+                    Console.WriteLine("Ori the Panda's magic level: " + magicLevel);
+                    Console.WriteLine("________________________________________________________");
+
+                }
             }
-
-
-
         }
-
-
-
-        public void DisplayOrithePanda()
-        {
-            Console.WriteLine("Name: " + name);
-            Console.WriteLine("Age: " + age);
-            Console.WriteLine("Color: " + color);
-            Console.WriteLine("________________________________________________________");
-            Console.WriteLine("Ori the Panda's power level: " + powerLevel);
-            Console.WriteLine("Ori the Panda's strength level: " + strengthLevel);
-            Console.WriteLine("Ori the Panda's dexterity level: " + dexterityLevel);
-            Console.WriteLine("Ori the Panda's magic level: " + magicLevel);
-            Console.WriteLine("________________________________________________________");
-
-        }
-        public void OritheMoody()
+            public void OritheMoody()
         {
             while (true)
+    
             {
+
                 Console.WriteLine("1. Add power ");
                 Console.WriteLine("2. Add strength ");
                 Console.WriteLine("3. Add dexterity ");
                 Console.WriteLine("4. Add magic");
+                Console.WriteLine("5. Finished ");
 
                 int answer = int.Parse(Console.ReadLine());
+                
                 if (answer == 1)
+
                 {
-                    Console.WriteLine("Ori the Panda's power level is 100%");
+                    Console.WriteLine("Ori the Panda's power level is: " + (powerLevel + powerLevel));
+                    Console.WriteLine("Ori the Panda's strength level: " + strengthLevel);
+                    Console.WriteLine("Ori the Panda's dexterity level: " + dexterityLevel);
+                    Console.WriteLine("Ori the Panda's magic level: " + magicLevel);
+                  
+                    
+                    }
+          
+
+                else
+                if (answer == 2 || answer==1)
+                {
+
+                    Console.WriteLine("Ori the Panda's strength level is: " + (strengthLevel + strengthLevel));
+                    Console.WriteLine("Ori the Panda's power level: " + (powerLevel+powerLevel));
+                    Console.WriteLine("Ori the Panda's dexterity level: " + dexterityLevel);
+                    Console.WriteLine("Ori the Panda's magic level: " + magicLevel);
+                  
+                }
+
+                else
+                if (answer == 3|| answer==2 ||answer==1)
+
+
+                {
+                    Console.WriteLine("Ori the Panda's dexterity level is: " + (dexterityLevel + dexterityLevel));
+                    Console.WriteLine("Ori the Panda's power level: " + (powerLevel+powerLevel));
+                    Console.WriteLine("Ori the Panda's strength level: " + (strengthLevel+strengthLevel));
+                    Console.WriteLine("Ori the Panda's magic level: " + magicLevel);
+                   
 
                 }
 
-                else if (answer == 2)
+                else
+                if (answer == 4 || answer==3||answer==2||answer==1)
                 {
-                    Console.WriteLine("Ori the Panda's strength level is 100%");
-                }
 
-                else if (answer == 3)
-                {
-                    Console.WriteLine("Ori the Panda's dexterity level is 100%");
-                }
-                else if (answer == 4)
-                {
-                    Console.WriteLine("Ori the Panda's magic level is 100%");
+                    Console.WriteLine("Ori the Panda's magic level is: " + (magicLevel+ magicLevel));
+                    Console.WriteLine("Ori the Panda's power level: " + (powerLevel+powerLevel));
+                    Console.WriteLine("Ori the Panda's strength level: " + (strengthLevel+strengthLevel));
+                    Console.WriteLine("Ori the Panda's dexterity level: " + (dexterityLevel+dexterityLevel));
+                   
+                    
                 }
                 else
                 {
+                    Console.WriteLine(" Now I'm ready to slay the dragon!");
                     break;
                 }
-           
-                //string[] mood = new string[4];
-                //mood[0] = "1.Feed him";
-                //mood[1] = "2.Give him water";
-                //mood[2] = "3.Pet him";
-                //mood[3] = "4. Give him some air";
+
+
+
+
+
+
+
 
             }
         }
-
     }
 }
+
+
